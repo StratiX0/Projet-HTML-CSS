@@ -1,3 +1,8 @@
+.bg-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 .img-responsive .centree {
 	margin: 0 auto;
 }
