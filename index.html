@@ -4,57 +4,173 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Bootstrap demo</title>
+		<!-- Lien intégrant Bootstrap -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
 			crossorigin="anonymous"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="/css/style.css"
+		/>
 	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg bg-dark">
-			<div class="container-fluid">
-				<a class="navbar-brand text-white" href="#">Jérôme Hussenet</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link active text-white" aria-current="page" href="#"
-								>CV</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-white" href="#">Contact</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-white" href="#">A propos</a>
-						</li>
-					</ul>
+	<body  class="bg-dark bg-gradient d-flex flex-column min-vh-100">
+	<!-- Photo de Profil -->
+		<div>
+			<img
+						src="/Images/Smiling Monke.jpg"
+						class="img-fluid rounded-circle mx-auto d-block"
+						alt="Photo"
+						width="30%"
+					/>
+				</div>
+		<!-- Titre de la page -->
+		<div class="Homepage">
+			<div class="title">
+				<h1 class="text-center">Jérôme Hussenet</h1>
+			</div>
+		</div>
+		<br />
+		<!-- Colomnes avec liens vers les réseaux -->
+		<div class="container-fluid">
+			<div class="row align-items-start">
+				<div class="col">
+					<a href="https://www.linkedin.com/in/j%C3%A9r%C3%B4me-hussenet-a77873253/"
+						><i class="bi bi-linkedin"></i>
+					</a>
+				</div>
+				<div class="col">
+					<a href="https://github.com/StratiX0">
+						<i class="bi bi-github"></i>
+					</a>
+				</div>
+				<div class="col">
+					<a href="https://twitter.com/StratiX6"
+						><i class="bi bi-twitter"></i>
+					</a>
+				</div>
+				<div class="col">
+					<a href="https://www.instagram.com/jerome_hst/"
+						><i class="bi bi-instagram"></i>
+					</a>
 				</div>
 			</div>
-		</nav>
-		<div class="text-center">
-			<img src="Images/Smiling Monke.jpg" class="rounded" alt="Placeholder Pic" />
 		</div>
-		<div class="mx-auto" style="width: 325px">
-			<div class="title">
-				<h1>Jérôme Hussenet</h1>
+		<br />
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card mx-auto mb-3 text-light bg-primary" style="width: 100%">
+						<div class="card-header">
+							<h2><i class="bi bi-person-circle"></i> Informations</h2>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<h4><i class="bi bi-briefcase-fill"></i> Étudiant</h4>
+							</li>
+							<li class="list-group-item">
+								<h4><i class="bi bi-geo-fill"></i> Amblainville, France</h4>
+							</li>
+							<li class="list-group-item">
+								<h4><i class="bi bi-envelope-fill"></i> jhussenet@gaming.tech</h4>
+							</li>
+							<li class="list-group-item">
+								<h4><i class="bi bi-phone-fill"></i> +33 06 28 90 26 33</h4>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card text-light bg-primary mx-auto  mb-3" style="width: 100%">
+						<div class="card-header">
+							<h2><i class="bi bi-briefcase-fill"></i> Formation</h2>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<h5>Collège Françoise Sagan</h5>
+								<p><i class="bi bi-calendar-fill"></i> 2015 - 2019</p>
+							</li>
+							<li class="list-group-item">
+								<h5>Lycée Condorcet</h5>
+								<p><i class="bi bi-calendar-fill"></i> 2019 - 2022</p>
+							</li>
+							<li class="list-group-item">
+								<h5>Gaming Campus</h5>
+								<p>
+									<i class="bi bi-calendar-fill"></i></i> 2022 -
+									<button class="btn btn-success px-3 py-0">Actuel</button>
+									<p>Bachelor Développeur Informatique, option Jeu Vidéo</p>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card mx-auto mb-3 text-light bg-primary" style="width: 100%">
+						<div class="card-header">
+							<h2><i class="bi bi-flag-fill"></i> Langues</h2>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<h5>Français</h5>
+								<div class="progress rounded-pill" style="height: 20px">
+									<div
+										class="progress-bar-fr">
+										<p class="text-center">Maternel</p>
+									</div>
+							</li>
+							<li class="list-group-item">
+								<h5>Anglais</h5>
+								<div class="progress rounded-pill" style="height: 20px">
+									<div
+										class="progress-bar-eng">
+										<p class="text-center">Niveau C1</p>
+									</div>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<h5>Allemand</h5>
+								<div class="progress rounded-pill" style="height: 20px">
+									<div
+										class="progress-bar-ger">
+										<p class="text-center">Niveau B2</p>
+									</div>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<h5>Japonais</h5>
+								<div class="progress rounded-pill" style="height: 20px">
+									<div
+										class="progress-bar-jp">
+									</div>
+									<p class="text-center">Débutant</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
+				<div class="card bg-primary mx-auto mb-3" style="width: 100%;">
+					<div class="card-header">
+						<h2 class="text-white"><i class="bi bi-joystick"></i> A propos de moi</h2>
+					</div>
+					<ul class="list-group list-group-flush">
+					  <li class="list-group-item">
+						<h5>Salut !</h5>
+						<p>Je m'appelle Jérôme Hussenet, j'ai 18 ans et je suis actuellement étudiant au Gaming Campus de Paris.</p>
+						<p>Je suis étudiant en GTECH en vu d'obtenir un Bachelor Développeur Informatique option Jeu Vidéo.</p>
+						<p>J'ai décidé de poursuivre ces études car d'aussi longtemps que je m'en souvienne, j'ai toujours joué aux Jeux Vidéos. Il est donc tout naturel pour moi que je poursuive des études en rapport avec ceux-ci.</p>
+						<p>Les Jeux Vidéos ne sont cependant pas ma seule passion, j'adore le sport automobile, le tennis, les films, la musique (électronique surtout), peut-être que vous me permettrez dans découvrir bien d'autres !</p>
+					  </li>
+					</ul>
+				  </div>
 		</div>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-			crossorigin="anonymous"
-		></script>
+		<footer class="bg-primary text-center"><h5>Créé par Jérôme Hussenet</h5></footer>
 	</body>
 </html>
